@@ -216,3 +216,7 @@ tr {
     line-height: 1.5em;
     font-size: 16px;
 }
+
+.wrapper > .header {
+    background-size: inherit;
+}
