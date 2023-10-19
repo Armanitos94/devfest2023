@@ -1,0 +1,218 @@
+body {
+  position: relative;
+}
+.header-filter:after {
+    background-color: transparent;
+}
+
+.alert {
+    font-size: 15px;
+}
+
+.alert.alert-info {
+    background-color: #4a8af4;
+}
+
+.logo{
+    margin-top: 12px;
+    padding-left: 15px;
+}
+
+.index-page .brand {
+  margin-top: 21vh;
+}
+
+.logo img {
+  display: inline-block;
+  margin-top:-5px;
+}
+
+.wrapper > .header {
+  background-attachment: fixed;
+}
+
+.index-page .wrapper > .header {
+  height: 100vh;
+}
+
+.thumbnail-mod{
+	border: 1px solid black;
+	max-width: 33.33;
+}
+
+h2{
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.cmd{
+    color: white;
+}
+
+.slk{
+  height: 50px;
+}
+
+.slk2{
+  height: 30px;
+  width: 72.5px;
+}
+
+.label-mod{
+  background-color: white;
+  color: black;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.vk{
+  padding: 5px 5px;
+}
+
+h6{
+  text-transform: none;
+}
+
+a{
+  text-transform: none;
+}
+
+.thumbnail {
+  border: 0;
+}
+
+.cmd-img{
+  width: 200px;
+  padding-top: 15px;
+}
+
+.navbar .navbar-nav > li > a {
+  font-size: 15px;
+}
+
+.schedule-info p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+.schedule-day {
+  font-size: 35px;
+    color: #fff;
+    line-height: 1.3em;
+}
+
+p{
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.track-img{
+  width: 200px;
+}
+
+hr{
+  margin-bottom: 0;
+}
+
+.container-fluid{
+  margin-top: 40px;
+}
+
+#schedule{
+  border-radius: 4px;
+}
+
+.bg-clr-cmd{
+  background-color: #4a8af4;
+  padding-bottom: 35px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.partner{
+  height: 142px;
+  width: 149px;
+  display: inline-block;
+}
+
+.contacts{
+  margin-top: 40px;
+}
+
+.logo > span {
+  color: #fff; 
+  font-size: 20px; 
+  font-weight: normal;
+}
+
+.caption > a > .slk {
+    height: 40px;
+}
+
+.caption > a {
+    padding: 0px 5px !important;
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+}
+
+.info-partners a {
+  display:inline-block;
+  padding: 0px 2em;
+}
+
+.navbar, .navbar.navbar-default {
+    background-color: #00ab47;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none !important;
+  color: #4379d4;
+}
+
+li {
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+.caption > h4 {
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+
+.caption > p {
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+tr {
+    color: #3C4858;
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+
+.cmd-green {
+  background-color: #00ab47;
+  padding-bottom: 90px;
+}
+
+.close {
+    font-size: 21px;
+}
+
+#staticBackdropLabel {
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 16px;
+}
