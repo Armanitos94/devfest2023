@@ -132,8 +132,7 @@ a:hover{
 }
 
 .partner{
-  height: 142px;
-  width: 149px;
+  max-width: 250px;
   display: inline-block;
 }
 
