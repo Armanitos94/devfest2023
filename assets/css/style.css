@@ -31,10 +31,6 @@ body {
   background-attachment: fixed;
 }
 
-.index-page .wrapper > .header {
-  height: 100vh;
-}
-
 .thumbnail-mod{
 	border: 1px solid black;
 	max-width: 33.33;
