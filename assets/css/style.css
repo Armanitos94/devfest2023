@@ -237,3 +237,7 @@ tr {
 .div-block-114 img{
   width: 40px;
 }
+
+h1, .h1 {
+  font-size: 3.2em;
+}
