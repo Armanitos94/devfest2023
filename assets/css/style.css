@@ -121,8 +121,10 @@ hr{
 }
 
 .bg-clr-cmd{
-  background-color: #4a8af4;
+  background-size: inherit;
+  background-attachment: fixed;
   padding-bottom: 35px;
+  margin-top: 0px;
 }
 
 a:hover{
@@ -215,4 +217,15 @@ tr {
 
 .wrapper > .header {
     background-size: inherit;
+}
+
+.bg-about {
+  background-color: #171718;
+    margin-top: 0px;
+    color: #fff;
+    padding-bottom: 35px;
+}
+
+.bg-about h2{
+    color: #ffba00;
 }
