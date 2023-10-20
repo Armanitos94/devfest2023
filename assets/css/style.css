@@ -136,6 +136,37 @@ a:hover{
   display: inline-block;
 }
 
+.ticket {
+  padding: 20px; 
+  color: #333;
+}
+
+.ticket p {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.badge-warning {
+  background-color: #ffba00;
+}
+
+.ticket .price {
+  font-size: 1.825em;
+  line-height: 1.4em;
+  margin: 20px 0 10px;
+}
+
+.badge {
+  border: none;
+  border-radius: 3px;
+  padding: 6px 15px;
+  margin: 10px 1px;
+  font-weight: 400;
+  letter-spacing: 0;
+  will-change: box-shadow, transform;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contacts{
   margin-top: 40px;
 }
