@@ -271,3 +271,7 @@ tr {
 h1, .h1 {
   font-size: 3.2em;
 }
+
+h2.title {
+    margin-bottom: 0px;
+}
