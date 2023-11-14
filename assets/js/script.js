@@ -12,13 +12,14 @@ $(document).ready(function() {
    });
 
    $(".speaker").click(function() {
+       $('#speakerModal').modal();
             $.getJSON("assets/speakers_text/content.json", function(data){
                $('#speakerModal').modal();
                var obj = data[0];
-               $("#reportName").html(obj["Name"]);
+               $("#reportName").html(obj["Title"]);
                $("#speakerPhoto").attr("src","assets/img/speakers/"+ obj["Photo"]);
-               //$("#reportName").html(obj["Title"]);
-              // $("#reportName").html(obj["Company"]);
+               $("#speakerName").html(obj["Name"]);
+               $("#speakerCompany").html(obj["Company"]);
                $("#reportDesctiption").html(obj["Description"]);
             });
          });
