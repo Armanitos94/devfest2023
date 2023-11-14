@@ -281,6 +281,6 @@ h2.title {
   cursor: pointer;
 }
 
-#reportName {
+#reportName, #speakerName, #speakerCompany {
   font-weight: 600;
 }
