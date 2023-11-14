@@ -271,7 +271,7 @@
                   </div>
                   <div class="row">
                      <div class="col-md-3">
-                        <div class="thumbnail thumbnail-mod">
+                        <div class="thumbnail thumbnail-mod speaker">
                            <img src="assets/img/speakers/belkevich.jpg" class="img-circle cmd-img">
                            <div class="caption text-center">
                               <h4>Александр Белькевич</h4>
@@ -694,6 +694,38 @@
          </div>
       </div>
    </div>
+
+
+   <!-- Modal -->
+   <div class="modal fade" id="speakerModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+         <div class="modal-content">
+            <div class="modal-header">
+               <strong id="staticBackdropLabel">Информация о спикере</strong>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <!--<div class="alert alert-danger" role="alert">
+                  Регистрация закрыта в связи с поступлением большого количества заявок!
+                  </div> -->
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="alert alert-danger" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                          <span class="sr-only">Error:</span>
+                          Для всех студентов действует скидка в 50 % на любой билет. Для этого необходимо заполнить данную форму и прикрепить документ подтверждающий ваш статус студента (студенческий билет или зачетную книжку, или справку из учебного заведения) и после подтверждения вы получите промокод на скидку в 50% на адрес эл. почты.
+                        </div> 
+                     </div>
+                  </div>
+               <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+               <iframe src="https://forms.yandex.ru/u/65327f7e2530c230036587ee/?iframe=1" frameborder="0" name="ya-form-65327f7e2530c230036587ee" width="100%"></iframe>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <!--   Core JS Files   -->
    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -702,4 +734,17 @@
    <script src="assets/js/material-kit.js" type="text/javascript"></script>
    <script src="assets/js/script.js" type="text/javascript"></script>
    <script src="https://events.nethouse.ru/assets/js/popup-form.js"></script>
+
+   <script>
+
+         $( ".speaker").click(function() {
+            $('#speakerModal').modal();
+
+         $.get("assets/speakers_text/1.txt", function(data){
+             $(".result").html(data);
+           alert(data);
+         });
+
+         });
+   </script>
 </html>
