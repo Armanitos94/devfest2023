@@ -733,18 +733,4 @@
    <script src="assets/js/material-kit.js" type="text/javascript"></script>
    <script src="assets/js/script.js" type="text/javascript"></script>
    <script src="https://events.nethouse.ru/assets/js/popup-form.js"></script>
-
-   <script>
-         $( ".speaker").click(function() {
-            $.getJSON("assets/speakers_text/content.json", function(data){
-               $('#speakerModal').modal();
-               var obj = data.responseJSON[0];
-               $("#reportName").html(obj["Name"]);
-               $("#speakerPhoto").attr("src","assets/img/speakers/"+ obj["Photo"]);
-               //$("#reportName").html(obj["Title"]);
-              // $("#reportName").html(obj["Company"]);
-               $("#reportDesctiption").html(obj["Description"]);
-            });
-         });
-   </script>
 </html>

@@ -10,6 +10,18 @@ $(document).ready(function() {
       });
       return false;
    });
+
+   $(".speaker").click(function() {
+            $.getJSON("assets/speakers_text/content.json", function(data){
+               $('#speakerModal').modal();
+               var obj = data.responseJSON[0];
+               $("#reportName").html(obj["Name"]);
+               $("#speakerPhoto").attr("src","assets/img/speakers/"+ obj["Photo"]);
+               //$("#reportName").html(obj["Title"]);
+              // $("#reportName").html(obj["Company"]);
+               $("#reportDesctiption").html(obj["Description"]);
+            });
+         });
  
  
 });
