@@ -12,7 +12,6 @@ $(document).ready(function() {
    });
 
    $(".speaker").click(function() {
-       $('#speakerModal').modal();
             $.getJSON("assets/speakers_text/content.json", function(data){
                $('#speakerModal').modal();
                var obj = data[0];
