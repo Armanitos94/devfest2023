@@ -719,7 +719,7 @@
 
                <h3>Тезисы</h3>
                <hr>
-               <div id="reportDesctiption">Расскажу, как устроена разработка гигантской кодовой базы ВКонтакте и доставка кода в продакшен. На таких объёмах кода нужны уже нетривиальные решения. Поговорим и про сборку, и по компиляцию, и про атомарность деплоя, и про специальные плагины для IDE, и про graceful restart на серверах, и про особенности Highload в целом. Большинство инструментов лежат в open-source, а принципы применимы вообще ко многим большим проектам.</div>
+               <div id="reportDesctiption"></div>
             </div>
          </div>
       </div>
@@ -739,12 +739,12 @@
             $('#speakerModal').modal();
 
          $.getJSON("assets/speakers_text/content.json", function(data){
-
-             $(".result").html(data);
-                        console.log(data);
-           alert(data);
-         });
-
+            var obj = data.responseJSON[0];
+            $("#reportName").html(obj.["Name"]);
+            $("#reportName").attr("src","assets/img/speakers/"+ obj.["Photo"]);
+            $("#reportName").html(obj.["Title"]);
+            $("#reportName").html(obj.["Company"]);
+            $("#reportDesctiption").html(obj.["Description"]);
          });
    </script>
 </html>
