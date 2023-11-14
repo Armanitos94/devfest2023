@@ -280,3 +280,7 @@ h2.title {
 .speaker {
   cursor: pointer;
 }
+
+#reportName {
+  font-weight: 600;
+}
