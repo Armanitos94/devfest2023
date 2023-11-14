@@ -14,7 +14,7 @@ $(document).ready(function() {
    $(".speaker").click(function() {
             $.getJSON("assets/speakers_text/content.json", function(data){
                $('#speakerModal').modal();
-               var obj = data.responseJSON[0];
+               var obj = data[0];
                $("#reportName").html(obj["Name"]);
                $("#speakerPhoto").attr("src","assets/img/speakers/"+ obj["Photo"]);
                //$("#reportName").html(obj["Title"]);
