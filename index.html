@@ -738,9 +738,10 @@
          $( ".speaker").click(function() {
             $('#speakerModal').modal();
 
-         $.getJSON("assets/speakers_text/speakers.json", function(data){
+         $.getJSON("assets/speakers_text/content.json", function(data){
 
              $(".result").html(data);
+                        console.log(data);
            alert(data);
          });
 
