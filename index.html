@@ -701,26 +701,37 @@
       <div class="modal-dialog modal-md">
          <div class="modal-content">
             <div class="modal-header">
-               <strong id="staticBackdropLabel">Информация о спикере</strong>
+               <strong id="staticBackdropLabel">Информация о докладе</strong>
                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
                </button>
             </div>
             <div class="modal-body">
-               <!--<div class="alert alert-danger" role="alert">
-                  Регистрация закрыта в связи с поступлением большого количества заявок!
-                  </div> -->
-                  <div class="row">
-                     <div class="col-md-12">
-                        <div class="alert alert-danger" role="alert">
-                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                          <span class="sr-only">Error:</span>
-                          Для всех студентов действует скидка в 50 % на любой билет. Для этого необходимо заполнить данную форму и прикрепить документ подтверждающий ваш статус студента (студенческий билет или зачетную книжку, или справку из учебного заведения) и после подтверждения вы получите промокод на скидку в 50% на адрес эл. почты.
-                        </div> 
-                     </div>
+                <div class="row">
+                  <div class="col-md-3">
+                   <img class="img-responsive img-circle" src="https://thumb.tildacdn.com/tild3361-3764-4761-a231-363833326664/-/resize/460x/-/format/webp/_.jpeg">
                   </div>
-               <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
-               <iframe src="https://forms.yandex.ru/u/65327f7e2530c230036587ee/?iframe=1" frameborder="0" name="ya-form-65327f7e2530c230036587ee" width="100%"></iframe>
+
+                  <div class="col-md-9">
+                    <h4 id="reportName"><strong>Жизнь в монолите на 8 млн php-строчек и 200 тысяч cpp-файлов</strong></h4>
+                 </div>
+               </div>
+
+               <h3>Тезисы</h3>
+               <hr>
+               <div id="reportDesctiption">Расскажу, как устроена разработка гигантской кодовой базы ВКонтакте и доставка кода в продакшен. На таких объёмах кода нужны уже нетривиальные решения. Поговорим и про сборку, и по компиляцию, и про атомарность деплоя, и про специальные плагины для IDE, и про graceful restart на серверах, и про особенности Highload в целом. Большинство инструментов лежат в open-source, а принципы применимы вообще ко многим большим проектам.</div>
+
+               <h3>Информация о спикере</h3>
+               <hr><br>
+               <div class="row">
+                  <div class="col-md-4">
+                   <img class="img-responsive" src="https://thumb.tildacdn.com/tild3361-3764-4761-a231-363833326664/-/resize/460x/-/format/webp/_.jpeg">
+                  </div>
+
+                  <div class="col-md-8">
+                    <div id="reportName">Расскажу, как устроена разработка гигантской кодовой базы ВКонтакте и доставка кода в продакшен. На таких объёмах кода нужны уже нетривиальные решения. Поговорим и про сборку, и по компиляцию, и про атомарность деплоя, и про специальные плагины для IDE, и про graceful restart на серверах, и про особенности Highload в целом. Большинство инструментов лежат в open-source, а принципы применимы вообще ко многим большим проектам.</div>
+                 </div>
+               </div>
             </div>
          </div>
       </div>
@@ -740,7 +751,7 @@
          $( ".speaker").click(function() {
             $('#speakerModal').modal();
 
-         $.get("assets/speakers_text/1.txt", function(data){
+         $.getJSON("assets/speakers_text/speakers.json", function(data){
              $(".result").html(data);
            alert(data);
          });
